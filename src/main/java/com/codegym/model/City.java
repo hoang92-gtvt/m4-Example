@@ -2,10 +2,7 @@ package com.codegym.model;
 
 import javax.persistence.*;
 import javax.validation.Validator;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 
 @Entity
 @Table
@@ -17,12 +14,12 @@ public class City {
     @NotEmpty
     private String name;
 
-
+    @NotNull
     private Long area;
 
-
+    @NotNull
     private Long population;
-
+    @NotNull
     private Long GDP;
 
 

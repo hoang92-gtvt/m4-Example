@@ -6,6 +6,7 @@ import com.codegym.service.city.ICityService;
 import com.codegym.service.countries.ICountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -43,8 +44,9 @@ public class CityController {
 
 
     @PostMapping("/create")
-    public ModelAndView saveCity(@ModelAttribute("city") City city) {
-       try{
+    public ModelAndView saveCity( @ModelAttribute("city") City city) {
+
+        try{
            cityService.save(city);
            Iterable<City> cities = cityService.findAll();
            ModelAndView modelAndView = new ModelAndView("/cities/list");
