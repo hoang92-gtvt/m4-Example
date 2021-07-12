@@ -2,8 +2,8 @@ com/codegym/model/Country.java
  com.codegym.model.Country
 com/codegym/repository/ICityRepository.java
  com.codegym.repository.ICityRepository
-com/codegym/model/City.java
- com.codegym.model.City
+com/codegym/service/countries/ICountryService.java
+ com.codegym.service.countries.ICountryService
 com/codegym/DemoApplication.java
  com.codegym.DemoApplication
 com/codegym/repository/ICountryRepository.java
@@ -14,9 +14,9 @@ com/codegym/service/city/ICityService.java
  com.codegym.service.city.ICityService
 com/codegym/service/IGeneralService.java
  com.codegym.service.IGeneralService
-com/codegym/controller/CityController.java
- com.codegym.controller.CityController
-com/codegym/service/countries/ICountryService.java
- com.codegym.service.countries.ICountryService
 com/codegym/service/city/CityService.java
  com.codegym.service.city.CityService
+com/codegym/model/City.java
+ com.codegym.model.City
+com/codegym/controller/CityController.java
+ com.codegym.controller.CityController

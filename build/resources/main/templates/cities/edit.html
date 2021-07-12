@@ -15,11 +15,11 @@
     <p th:text="${message}" style="color:red"></p>
 </th:block>
 
-<h3><a th:href="@{/city/list}"> <input type="button" value="Quay về List" > </a> </h3>
+<h3><a th:href="@{/city/list}"> <input type="button" value="Home" > </a> </h3>
 <br>
 <form th:action="@{/city/edit}" method="post" th:object="${city}">
     <input type="hidden" name="id" th:field="*{id}">
-    <table class="table-responsive">
+    <table class="table table-success table-striped">
         <tr>
             <td>Name:</td>
             <td><input type="text" th:field="*{name}"></td>
@@ -31,7 +31,7 @@
                     <option th:each="p:${countries}"
                             th:value="${p.id}"
                             th:text="${p.name}">
-<!--                            th:selected="(${city.country}) and ${p.id} == *{country.id}">-->
+
                     </option>
                 </select>
             </td>
