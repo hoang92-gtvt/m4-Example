@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.Validator;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
 @Entity
@@ -13,6 +14,7 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotEmpty
     private String name;
 
 
@@ -23,11 +25,11 @@ public class City {
 
     private Long GDP;
 
+
     private String description;
 
     @ManyToOne
     private Country country;
-
 
     public City() {
     }

@@ -12,30 +12,30 @@
 <h1>Delete city</h1>
 
 <p>
-    <a th:href="@{/city/list}">City list</a>
+    <a th:href="@{/city/list}">home</a>
 </p>
 <form th:action="@{/city/delete}" th:object="${city}" method="post">
     <input th:type="hidden" name="id" th:field="*{id}">
-    <table class="table table-striped">
+    <table class="table table-success table-striped">
         <tr>
             <td>City name:</td>
-            <td type="text" th:text="${city.name}"/></td>
+            <td type="text" th:text="${city.name}"></td>
         </tr>
         <tr>
             <td>Area:</td>
-            <td type="text" th:text="${city.area}"/></td>
+            <td type="text" th:text="${city.area}"></td>
         </tr>
         <tr>
             <td>Population:</td>
-            <td type="text" th:text="${city.population}"/></td>
+            <td type="text" th:text="${city.population}"></td>
         </tr>
         <tr>
             <td>GDP:</td>
-            <td type="text" th:text="${city.GDP}"/></td>
+            <td type="text" th:text="${city.GDP}"></td>
         </tr>
         <tr>
             <td>Description:</td>
-            <td type="text" th:text="${city.description}"/></td>
+            <td type="text" th:text="${city.description}" ></td>
         </tr>
         <tr>
             <td>Are you sure?</td>

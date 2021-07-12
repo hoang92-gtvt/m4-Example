@@ -12,11 +12,11 @@
 <body>
 
 
-<h3><a th:href="@{/city/list}"> <input type="button" value="Quay về List" > </a> </h3>
+<h4><a th:href="@{/city/list}"> <input type="button" value="Home" > </a> </h4>
 <br>
 <form th:action="@{/city/edit}" method="post" th:object="${city}">
     <input type="hidden" name="id" th:field="*{id}">
-    <table class="table table-striped">
+    <table class="table table-success table-striped">
         <tr>
             <td>Name:</td>
             <td><input type="text" th:field="*{name}" disabled></td>
